@@ -4,7 +4,7 @@ import serial
 import time
 
 # Initialize the serial connection to the GPYes device
-ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)  # Update this to your correct port
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)  # Corrected to /dev/ttyACM0
 
 # Function to read the data from GPYes
 def get_gps_data():
